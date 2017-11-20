@@ -1,0 +1,237 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="pisangmolen.com.ajari.Fragment.MyProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Rafika"/>
+        <TextView
+            android:id="@+id/phone_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+62 81247899776"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/name_profile"
+            android:textSize="13sp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/phone_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:contentPadding="8dp"
+            app:cardCornerRadius="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="507 Points"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/profile_layout"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/profile_layout"
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/icon_qr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_qrcode_scan"
+                android:tint="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/qr_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_qr"
+                android:layout_alignTop="@id/icon_qr"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/grey_2"
+                android:text="QR Code Saya"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_qr"
+                android:layout_alignBottom="@id/icon_qr"
+                android:layout_below="@id/qr_title"
+                android:layout_marginStart="16dp"
+                android:text="Tunjukan QR Code kepada mentor"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/icon_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_account_edit"
+                android:tint="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/title_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_edit"
+                android:layout_alignTop="@id/icon_edit"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/grey_2"
+                android:text="Isi Data Pemesanan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_edit"
+                android:layout_below="@id/title_edit"
+                android:layout_toStartOf="@+id/chevron"
+                android:layout_marginStart="16dp"
+                android:text="Lengkapi Data untuk mempermudah booking"/>
+            <ImageView
+                android:id="@+id/chevron"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+            <ImageView
+                android:id="@+id/icon_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logout"
+                android:tint="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/title_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_logout"
+                android:layout_alignTop="@id/icon_logout"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/grey_2"
+                android:text="Keluar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon_logout"
+                android:layout_below="@id/title_logout"
+                android:layout_toStartOf="@+id/chevron3"
+                android:layout_marginStart="16dp"
+                android:text="Keluar untuk berganti akun"/>
+            <ImageView
+                android:id="@+id/chevron3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:padding="12dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_mode_edit_black"
+        android:tint="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView.Small"
+        android:visibility="gone"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:indicatorColor="@color/colorPrimary"
+    />
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4169E1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff5a1d</color>
+
+    <color name="colorPrimarySoft">#3E53D9</color>
+
+    <color name="accent_green">#00d11c</color>
+    <color name="grey">#dedede</color>
+    <color name="grey_2">#484848</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey_text">#424242</color>
+    <color name="grey_dark">#808080</color>
+    <color name="black30">#717272</color>
+    <color name="black10">#ABABAB</color>
+    <color name="black5">#D0D0D1</color>
+
+    <color name="grey_blue">#c5cae9</color>
+
+    <color name="promo_selamat">#ffc350</color>
+    <color name="promo_ups">#c64444</color>
+    <color name="promo_tukar">#728ee1</color>
+
+    <color name="pink_muda">#ff9595</color>
+    <color name="badge">#f6c61b</color>
+    <color name="background_welcome">#ecf1f5</color>
+
+    <color name="background_inbox">#f9f9f9</color>
+    <color name="pink_muda_login">#F7F5F8</color>
+
+
+
+</resources>

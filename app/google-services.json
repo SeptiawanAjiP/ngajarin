@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "488153554236",
+    "firebase_url": "https://ngajar-800a5.firebaseio.com",
+    "project_id": "ngajar-800a5",
+    "storage_bucket": "ngajar-800a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488153554236:android:55be8773655b4e1d",
+        "android_client_info": {
+          "package_name": "pisangmolen.com.ajari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488153554236-kjcpr66mcotpmjveki7h9tt3edkbmb1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pisangmolen.com.ajari",
+            "certificate_hash": "b979f76aa25450e5e8dd5ada212968c28d630e19"
+          }
+        },
+        {
+          "client_id": "488153554236-t7g0bigq5ftku53o02ol6j3rhs4nv080.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBabgyvbkfQP5WfBMlheWDJU6Z-WvtC98Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488153554236-t7g0bigq5ftku53o02ol6j3rhs4nv080.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Ajari</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email (name@email.com)</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="error_field_required">Isian di Butuhkan</string>
+    <string name="error_invalid_phone">Periksa kembali nomor telepon</string>
+    <string name="error_invalid_email">Alamat Email tidak valid</string>
+    <string name="error_invalid_name">Nama Tidak Mengandung Angka</string>
+
+    <string name="action_facebook">Terhubung ke Facebook</string>
+    <string name="prompt_name">Nama</string>
+    <string name="prompt_phone">Nomor HP (812xxxxxxx)</string>
+    <string name="prompt_phoneemail">Nomor HP atau Email</string>
+    <string name="action_login">Masuk</string>
+    <string name="action_register">Daftar</string>
+    <string name="action_request_materi">Request Materi</string>
+
+    <string name="login_ques">Sudah Pernah Bergabung?</string>
+    <string name="register_ques">Belum Pernah Bergabung?</string>
+
+    <string name="text_desc_login">Masukkan nomor hp</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>\
+    <string name="title_profile">My Profile</string>
+    <string name="title_booking">Booking</string>
+    <string name="blank_alamat">Alamat harus diisi</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="request_materi">Materi les tidak tersedia?</string>
+
+    <array name="durasi_les">
+        <item>1 Jam</item>
+        <item>2 Jam</item>
+        <item>3 Jam</item>
+        <item>4 Jam</item>
+    </array>
+
+    <array name="jumlah_siswa">
+        <item>1 Siswa</item>
+        <item>2 Siswa</item>
+        <item>3 Siswa</item>
+        <item>4 Siswa</item>
+    </array>
+
+    <array name="pelajaran">
+        <item>Bahasa Indonesia</item>
+        <item>Matematika</item>
+        <item>Bahasa Inggris</item>
+        <item>Biologi</item>
+    </array>
+
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="pisangmolen.com.ajari.OrderActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_book"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/pelajaran_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_book_black"
+                        android:tint="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/title_pelajaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/pelajaran_ico"
+                        android:text="Mata Pelajaran"
+                        android:textSize="13sp"
+                        android:layout_alignTop="@id/pelajaran_ico"
+                        style="@style/input_style"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <Spinner
+                        android:layout_below="@id/title_pelajaran"
+                        android:layout_toEndOf="@id/pelajaran_ico"
+                        android:layout_alignBottom="@id/pelajaran_ico"
+                        android:id="@+id/pelajaran_les"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="53dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/date_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_event_note_black"
+                        android:tint="@android:color/darker_gray"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal dan Jam Mulai"
+                        android:layout_alignTop="@id/date_ico"
+                        android:textColor="@android:color/darker_gray"
+                        style="@style/input_style"
+                        android:textSize="13sp"
+                        android:id="@+id/title_date"
+                        android:layout_toEndOf="@id/date_ico"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@id/date_ico"
+                        android:layout_toEndOf="@id/date_ico"
+                        android:layout_below="@id/title_date">
+                        <EditText
+                            android:id="@+id/tanggal_les"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="8dp"
+                            android:hint="Tanggal"
+                            android:textSize="16sp"
+                            android:editable="false"
+                            android:background="@android:color/transparent"/>
+
+                        <EditText
+                            android:id="@+id/jam_mulai_les"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:textSize="16sp"
+                            android:layout_width="0dp"
+                            android:hint="waktu Mulai"
+                            android:editable="false"
+                            android:background="@android:color/transparent"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="53dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/timer_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_timer_black"
+                        android:tint="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/title_durasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/timer_ico"
+                        android:text="Durasi"
+                        android:textSize="13sp"
+                        android:layout_alignTop="@id/timer_ico"
+                        style="@style/input_style"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <Spinner
+                        android:layout_below="@id/title_durasi"
+                        android:layout_toEndOf="@id/timer_ico"
+                        android:layout_alignBottom="@id/timer_ico"
+                        android:id="@+id/durasi_les"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="53dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/siswa_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_people_black"
+                        android:tint="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/title_siswa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/siswa_ico"
+                        android:text="Jumlah Siswa"
+                        android:textSize="13sp"
+                        android:layout_alignTop="@id/siswa_ico"
+                        style="@style/input_style"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <Spinner
+                        android:layout_below="@id/title_siswa"
+                        android:layout_toEndOf="@id/siswa_ico"
+                        android:layout_alignBottom="@id/siswa_ico"
+                        android:id="@+id/siswa_les"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="53dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/alamat_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_home_black"
+                        android:tint="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/title_alamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/alamat_ico"
+                        android:text="Alamat"
+                        android:textSize="13sp"
+                        android:layout_alignTop="@id/alamat_ico"
+                        style="@style/input_style"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <EditText
+                        android:layout_below="@id/title_alamat"
+                        android:layout_toEndOf="@id/alamat_ico"
+                        android:layout_alignBottom="@id/alamat_ico"
+                        android:id="@+id/alamat_les"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:background="@android:color/transparent">
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="53dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/catatan_ico"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_pencil"
+                        android:tint="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/title_catatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/catatan_ico"
+                        android:text="Catatan"
+                        android:textSize="13sp"
+                        android:layout_alignTop="@id/catatan_ico"
+                        style="@style/input_style"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <EditText
+                        android:layout_below="@id/title_catatan"
+                        android:layout_toEndOf="@id/catatan_ico"
+                        android:id="@+id/catatan_les"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/catatan_ico"
+                        android:background="@android:color/transparent">
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="58dp"
+                    android:background="@android:color/darker_gray">
+                </View>
+                <TextView
+                    android:id="@+id/harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total biaya : Rp. 65000"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"/>
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi_total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AVLoadingIndicatorView.Small"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    app:indicatorName="BallPulseIndicator"
+                    app:indicatorColor="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/button_order"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorPrimarySoft"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pesan Sekarang"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView.Small"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:indicatorColor="@color/colorPrimary"
+        />
+
+</RelativeLayout>
